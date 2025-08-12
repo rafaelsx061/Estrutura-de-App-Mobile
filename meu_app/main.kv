@@ -1,0 +1,84 @@
+#:kivy 2.3.0
+
+<GerenciadorTelas>:
+    HomeScreen:
+    Tela1Screen:
+    Tela2Screen:
+    Tela3Screen:
+    Tela4Screen:
+    Tela5Screen:
+
+<HomeScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        spacing: 10
+        padding: 20
+
+        Label:
+            text: "Tela Inicial"
+            font_size: 32
+
+        Button:
+            text: "Ir para Tela 1"
+            on_release: app.root.current = "tela1"
+
+        Button:
+            text: "Ir para Tela 2"
+            on_release: app.root.current = "tela2"
+
+        Button:
+            text: "Ir para Tela 3"
+            on_release: app.root.current = "tela3"
+
+        Button:
+            text: "Ir para Tela 4"
+            on_release: app.root.current = "tela4"
+
+        Button:
+            text: "Ir para Tela 5"
+            on_release: app.root.current = "tela5"
+
+<Tela1Screen>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Você está na Tela 1"
+        Button:
+            text: "Voltar para Home"
+            on_release: app.root.current = "home"
+
+<Tela2Screen>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Você está na Tela 2"
+        Button:
+            text: "Voltar para Home"
+            on_release: app.root.current = "home"
+
+<Tela3Screen>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Você está na Tela 3"
+        Button:
+            text: "Voltar para Home"
+            on_release: app.root.current = "home"
+
+<Tela4Screen>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Você está na Tela 4"
+        Button:
+            text: "Voltar para Home"
+            on_release: app.root.current = "home"
+
+<Tela5Screen>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Você está na Tela 5"
+        Button:
+            text: "Voltar para Home"
+            on_release: app.root.current = "home"
